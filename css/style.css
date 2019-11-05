@@ -1,0 +1,40 @@
+body{
+    
+}
+
+.contenedorImagen{
+    background-image: url(../images/logoSound.jpg);
+    background-size: 100px;
+    width: 100px;
+    height: 67px;
+    background-repeat: no-repeat;
+  
+}
+.contenedorPrincipal{
+    display: flex;
+    margin-bottom: 5px;
+}
+
+.contenedorColor{
+    background-color: darkorange;
+    width: 100vw;
+    height: 67px;
+}
+#draggable{
+    width: 150px; height: 150px; padding: 0.5em;
+}
+
+.musicaArrastrada{
+    width: 350px;
+  height: 70px;
+  padding: 10px;
+  border: 1px solid #aaaaaa;
+}
+
+.sc{
+    width: 200px;
+    height: 100px;
+}
+
+
+
