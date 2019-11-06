@@ -1,5 +1,15 @@
 body{
+    background-image: url(../images/fondoSC.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 40vw;
+    background-position-y: 10px;
     
+}
+
+.contenedorPrincipal{
+    display: flex;
+    justify-content: flex-end;
 }
 
 .contenedorImagen{
@@ -10,16 +20,46 @@ body{
     background-repeat: no-repeat;
   
 }
-.contenedorPrincipal{
+.contenedorArriba{
     display: flex;
     margin-bottom: 5px;
 }
 
 .contenedorColor{
     background-color: darkorange;
-    width: 100vw;
+    width: 91vw;
     height: 67px;
 }
+
+.contenedorReproductorYArrastrar{
+    position: absolute;
+    border: black solid;
+    width: 50vw;
+    height: 600px;
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.contenedorReproductor {
+    height: 50%;
+    border-bottom: 1px solid;
+
+}
+
+.contenedorArrastrar{
+    height: 50%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    color: darkorange;
+}
+
 #draggable{
     width: 150px; height: 150px; padding: 0.5em;
 }
@@ -31,10 +71,24 @@ body{
   border: 1px solid #aaaaaa;
 }
 
-.sc{
+.titulo{
+    margin-bottom: 0%;
+    margin-top: 3px;
+
+}
+
+.genero{
+    margin: 0%;
+}
+
+.autor{
+    margin-top: 0%;
+}
+
+/* .sc{
     width: 200px;
     height: 100px;
-}
+} */
 
 
 
