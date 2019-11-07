@@ -1,15 +1,22 @@
 body{
-    background-image: url(../images/fondoSC.png);
+    width: 95vw;
+    height: 80vh;
+    background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url("../images/fondoSC.png");
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
+    background-position-x: 400px;
+    background-position-y: 150px;
     background-size: 40vw;
-    background-position-y: 10px;
+    
+    
     
 }
+
 
 .contenedorPrincipal{
     display: flex;
     justify-content: flex-end;
+    overflow: hidden;
 }
 
 .contenedorImagen{
@@ -27,7 +34,7 @@ body{
 
 .contenedorColor{
     background-color: darkorange;
-    width: 91vw;
+    width: 88vw;
     height: 67px;
 }
 
@@ -35,29 +42,43 @@ body{
     position: absolute;
     border: black solid;
     width: 50vw;
-    height: 600px;
+    height: 80%;
     margin-top: 70px;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 
 
 .contenedorReproductor {
-    height: 50%;
+    height: 100%;
     border-bottom: 1px solid;
-
-}
-
-.contenedorArrastrar{
-    height: 50%;
     align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 30px;
-    color: darkorange;
+    
+
+}
+
+.reproductorIframe{
+    width: 150%;
+    height: 50%;
+}
+
+.contenedorArrastrar{
+    border: none;
+    /* height: 50%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    color: darkorange; */
 }
 
 #draggable{
@@ -65,10 +86,19 @@ body{
 }
 
 .musicaArrastrada{
-    width: 350px;
-  height: 70px;
+    width: 100%;
+  height: 49px;
   padding: 10px;
-  border: 1px solid #aaaaaa;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  /* color: rgb(241, 120, 21) */
+  color: rgba(247, 124, 10, 0.993);
+  text-shadow: 1px 2px black;
+  /* border: 1px solid #aaaaaa; */
+}
+
+.lista{
+    overflow: scroll;
+    height: 100%;
 }
 
 .titulo{
@@ -90,5 +120,9 @@ body{
     height: 100px;
 } */
 
+/* CLASES DE SOUNDCLOUD*/
 
+.cookiePolicy .sc-background-light{
+    display: none;
+}
 

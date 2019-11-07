@@ -46,16 +46,15 @@
     event.preventDefault();
    }
 
-   function drag(event, pene){
-     event.dataTransfer.setData('data', pene);
-     console.log(pene);
+   function drag(event, objetoDragado){
+     event.dataTransfer.setData('data', objetoDragado);
+     console.log(objetoDragado);
    }
   
    function drop(event){
+     document.getElementById("reproductor").style="display:block";
+     document.getElementById("cancionArrastrada").innerHTML = "Arrastra otra cancion aqui"
      event.preventDefault();
-    //  cancion3(event.target.id);
-    // asignamosCancion(event);
-    //  event.preventDefault();
     var data = event.dataTransfer.getData('data');
     cargarCancion(data);
     console.log('data' + data)
@@ -63,31 +62,16 @@
    }
 
   
-function cancion(event){
-  var track_url = 'https://soundcloud.com/tracks/' + event;
-SC.oEmbed(track_url, { auto_play: true }).then(function(oEmbed) {
-  console.log('oEmbed response: ', oEmbed);
-});
-}
+// function cancion(event){
+//   var track_url = 'https://soundcloud.com/tracks/' + event;
+// SC.oEmbed(track_url, { auto_play: true }).then(function(oEmbed) {
+//   console.log('oEmbed response: ', oEmbed);
+// });
+// }
 
-function cancion2(event){
-  var track_url = 'https://soundcloud.com/' + event + '\'';
-SC.oEmbed(track_url, { auto_play: true }).then(function(oEmbed) {
-  console.log('oEmbed response: ', oEmbed);
-});
-}
-function cancion3(event){
-  SC.stream('\'' + event + '\'').then(function(player){
-    player.play().then(function(){
-      console.log('Playback started!');
-    }).catch(function(e){
-      console.error('Playback rejected. Try calling play() from a user interaction.', e);
-    });
-  });
-}
 
 function cargarCancion(id){
-  document.getElementById('reproductor').src = "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/" + id + "&auto_play=true";
+  document.getElementById('reproductor').src = "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/" + id + "&auto_play=true&liking=false&bbuying=false&sharing=false";
 }
 
 
