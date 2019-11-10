@@ -1,6 +1,6 @@
 body{
     width: 95vw;
-    height: 80vh;
+    height: 74vh;
     background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url("../images/fondoSC.png");
     background-repeat: no-repeat;
     background-position-x: 400px;
@@ -14,6 +14,7 @@ body{
     display: flex;
     justify-content: flex-end;
     overflow: hidden;
+    width: 99vw;
 }
 
 .contenedorImagen{
@@ -33,7 +34,7 @@ body{
 .contenedorColor{
     display: flex;
     background-color: darkorange;
-    width: 88vw;
+    width: 92vw;
     height: 67px;
     justify-content: center;
     align-items: center;
@@ -129,5 +130,11 @@ input{
 .imagen{
     width: 10px;
     
+}
+
+.pieDePagina{
+    background-color: darkorange;
+    width: 99vw;
+    height: 20px;
 }
 
